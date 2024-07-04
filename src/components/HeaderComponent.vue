@@ -8,7 +8,6 @@ import { RouterLink } from 'vue-router'
         <ul class="flex justify-between">
           <li><RouterLink to="/users" class="hover:underline">Users</RouterLink></li>
           <li><RouterLink to="/posts" class="hover:underline">Posts</RouterLink></li>
-          <li>Comments</li>
         </ul>
       </nav>
     </div>

@@ -6,6 +6,7 @@ import TeamsView from './components/TeamsView.vue'
 import TeamView from './components/TeamView.vue'
 import NotFoundView from './components/NotFoundView.vue'
 import HomeView from './components/HomeView.vue'
+import UserView from './components/UserView.vue'
 import { createRouter, createWebHistory } from 'vue-router'
 import App from './App.vue'
 
@@ -30,6 +31,11 @@ const router = createRouter({
       path: '/post/:id',
       name: 'Post',
       component: TeamView
+    },
+    {
+      path: '/user/:id',
+      name: 'User',
+      component: UserView
     },
     {
       path: '/:pathMatch(.*)*',

@@ -14,9 +14,11 @@ watchEffect(async () => {
 })
 </script>
 <template>
-  <RouterLink :to="{ name: 'Posts' }">К постам...</RouterLink>
-  <div class="flex flex-col justify-between gap-y-8 w-4/5 pt-4">
-    <h1 class="text-left">{{ post.title }}</h1>
-    <p>{{ post.body }}</p>
+  <RouterLink :to="{ name: 'Posts' }">Ко всем постам...</RouterLink>
+  <div class="flex flex-col mt-4 gap-y-8 w-4/5 rounded-xl border w-full h-dvh">
+    <h1 class="text-left border-b w-full px-4 py-4 rounded-t-xl text-blue-400">
+      {{ post.title }}
+    </h1>
+    <p class="px-4">{{ post.body }}</p>
   </div>
 </template>

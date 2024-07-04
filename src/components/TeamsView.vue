@@ -21,7 +21,7 @@ watchEffect(async () => {
 onMounted(async () => {
   try {
     await axios
-      .get(`https://gorest.co.in/public/v1/posts?page=${currentPage.value}`)
+      .get('https://gorest.co.in/public/v1/posts}')
       .then((response) => (teams.value = response.data.data))
   } catch (err) {
     console.warn(err)

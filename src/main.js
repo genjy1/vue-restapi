@@ -5,6 +5,7 @@ import UsersView from './components/UsersView.vue'
 import TeamsView from './components/TeamsView.vue'
 import TeamView from './components/TeamView.vue'
 import NotFoundView from './components/NotFoundView.vue'
+import HomeView from './components/HomeView.vue'
 import { createRouter, createWebHistory } from 'vue-router'
 import App from './App.vue'
 
@@ -13,7 +14,7 @@ const router = createRouter({
     {
       path: '/',
       name: 'Home',
-      component: App
+      component: HomeView
     },
     {
       path: '/users',

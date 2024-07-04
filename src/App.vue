@@ -1,13 +1,6 @@
 <script setup>
 import { RouterView } from 'vue-router'
 import HeaderComponent from './components/HeaderComponent.vue'
-// import { watchEffect } from 'vue'
-
-// watchEffect(() => {
-//   const route = useRoute()
-
-//   document.title = route.name
-// })
 </script>
 
 <template>

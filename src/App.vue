@@ -5,7 +5,7 @@ import HeaderComponent from './components/HeaderComponent.vue'
 
 <template class="scroll-smooth">
   <HeaderComponent />
-  <main class="mx-auto my-0 w-4/5 py-24">
+  <main class="mx-auto my-0 w-2/3 py-24 border h-screen">
     <RouterView />
   </main>
 </template>

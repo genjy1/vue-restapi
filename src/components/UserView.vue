@@ -9,9 +9,13 @@ const route = useRoute()
 const id = computed(() => route.params.id)
 
 watchEffect(async () => {
-  axios
-    .get(`https://gorest.co.in/public/v1/users/${id.value}/posts`)
-    .then((response) => (userPosts.value = response.data.data))
+  try {
+    axios
+      .get(`https://gorest.co.in/public/v1/users/${id.value}/posts`)
+      .then((response) => (userPosts.value = response.data.data))
+  } catch (err) {
+    console.warn(err)
+  }
 })
 watchEffect(async () => {
   axios
@@ -20,7 +24,7 @@ watchEffect(async () => {
 })
 </script>
 <template>
-  <div class="wrapper flex flex-col gap-y-4">
+  <div class="wrapper flex flex-col gap-y-4 px-4">
     <h1 class="text-3xl">{{ user.name }}</h1>
     <h2 class="text-xl">Ваши посты</h2>
     <div class="posts__wrapper grid grid-cols-3">

@@ -15,7 +15,7 @@ onMounted(async () => {
 })
 </script>
 <template>
-  <ul class="grid grid-rows gap-4">
+  <ul class="grid grid-rows gap-4 px-4">
     <li v-for="user in users" :key="user.id">
       <RouterLink :to="{ name: 'User', params: { id: user.id } }" class="flex align-items gap-x-4">
         <img src="../assets/logo.svg" alt="Avatar Icon" class="w-6" /> {{ user.name }}

@@ -48,10 +48,10 @@ onMounted(async () => {
   </div>
 
   <div class="fixed w-full backdrop-blur left-0 bottom-0">
-    <div class="w-4/5 mx-auto my-0 flex gap-x-5 py-4 md:text-white">
-      <button class="relative text-slate-400 rounded-xl px-4" @click="currentPage--">Prev</button>
-      <span>{{ currentPage }}</span>
-      <button class="relative text-slate-400 rounded-xl px-4" @click="currentPage++">Next</button>
+    <div class="w-4/5 mx-auto my-0 flex gap-x-5 py-4">
+      <button class="relative text-slate-600 rounded-xl px-4" @click="currentPage--">Prev</button>
+      <span class="rounded-xl border border-black px-2">{{ currentPage }}</span>
+      <button class="relative text-slate-600 rounded-xl px-4" @click="currentPage++">Next</button>
     </div>
   </div>
 </template>
